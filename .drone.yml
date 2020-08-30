@@ -5,4 +5,4 @@ steps:
   - name: hello
     image: plugins/git
     commands:
-      - echo "DRONE_COMMIT_MESSAGE: ${DRONE_COMMIT_MESSAGE:-}"
+      - 'echo "DRONE_COMMIT_MESSAGE: ${DRONE_COMMIT_MESSAGE:-}"'
