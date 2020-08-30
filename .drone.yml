@@ -1,0 +1,9 @@
+---
+kind: pipeline
+name: default
+steps:
+  - name: hello
+    image: plugins/git
+    commands:
+      - apk add bash
+      - bash hello.sh
