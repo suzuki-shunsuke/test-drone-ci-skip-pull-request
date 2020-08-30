@@ -5,4 +5,5 @@ steps:
   - name: hello
     image: plugins/git
     commands:
-      - 'echo "DRONE_COMMIT_MESSAGE: ${DRONE_COMMIT_MESSAGE:-}"'
+      - apk add bash
+      - bash hello.sh
